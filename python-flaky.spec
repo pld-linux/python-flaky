@@ -2,13 +2,13 @@
 # Conditional build:
 %bcond_with	tests	# unit tests (many failures)
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with		python3 # CPython 3.x module (see python3-flaky.spec)
 
 Summary:	Plugin for nose or pytest that automatically reruns flaky tests
 Summary(pl.UTF-8):	Wtyczka dla nose lub pytesta automatycznie uruchamiająca ponownie niepewne testy
 Name:		python-flaky
 Version:	3.7.0
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/flaky/

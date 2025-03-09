@@ -83,7 +83,7 @@ testów lub oznaczania ich @skip, można je automatycznie ponowić.
 
 %prep
 %setup -q -n flaky-%{version}
-%patch0 -p1
+%patch -P 0 -p1
 
 %build
 %if %{with python2}
